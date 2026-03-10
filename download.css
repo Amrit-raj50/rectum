@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0e2c3a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+
+/* Navbar */
+.navbar {
+  /* background: linear-gradient(to bottom, #1b1b1b, #111);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px; */
+  height: 100px;
+  color: white;
+  background:linear-gradient(#555555, #222222, #222222);
+}
+.wrapper{
+  text-align: left;
+}
+.wrapper{
+  margin: 0 auto;
+  width: 940px;
+  clear: left;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  padding: 15px 0px;
+  float: left;
+  width: 380px;
+  line-height: 1.5;
+}
+.navbar a{
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+a{
+  outline: 0;
+}
+#electrum_logo {
+  width: 70px;
+  height: 66px;
+  display: block;
+  float: right;
+  background-image: url(https://electrum.org/logo/electrum_logo.png) no-repeat 0 0;
+  background-image: -webkit-image-set(url(https://electrum.org/logo/electrum_logo.png) 1x, url(https://electrum.org/logo/electrum_logo.png) 2x);
+  background-size: 70px 66px;
+}
+#electrum_logo img {
+  position: absolute;
+  top: 100%;
+  left: -99999px;
+  width: 20vh;
+  height: 20vh;
+}
+
+
+a img{
+  border: none;
+}
+#electrum_text {
+  width: 300px;
+  height: 45px;
+  display: block;
+  background-image: url(https://electrum.org/logo/electrum_text.png) no-repeat 0 0;
+  background-image: -webkit-image-set(url(https://electrum.org/logo/electrum_text.png) 1x, url(https://electrum.org/logo/electrum_text.png) 2x);
+  background-size: 300px 42px;
+  cursor: pointer;
+}
+
+.float-right{
+  float: right;
+}
+.main-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.logo p {
+  font-size: 13px;
+  color: #bbb;
+}
+
+nav {
+  font-size: 90%;
+  float: right;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00aaff;
+}
+
+/* Social Icons */
+.icons {
+ margin-top: 10px;
+  float: right;
+}
+
+.icons a {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.icons img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1); 
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.icons img:hover {
+  opacity: 1;
+}
+/*Warning Bar */
+.warning-bar {
+  background-color: #00384d;
+  text-align: center;
+  padding: 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+/*Content */
+.content {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+.content a{
+  text-decoration: none;
+  color: #0099ff;
+}
+h2,
+h3 {
+  color: #feffff;
+}
+
+/*Tables*/
+.table-section table,
+.install-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 20px 0;
+  background-color: #dddddd;
+}
+
+.table-section td,
+.install-table td {
+  border: 1px solid #1f4c5c;
+  padding: 12px;
+  vertical-align: middle;
+  color: black;
+}
+.install-table td{
+  color: black;
+}
+.table-section a,
+.install-table a {
+  color: #0099ff;
+}
+
+code {
+  padding: 2px 5px;
+  border-radius: 4px;
+  display: block;
+  margin-top: 5px;
+}
+
+
+ 
+
+.platform-logo img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: transform 0.3s ease;
+}
+
+.platform-logo img:hover {
+  transform: scale(1.1);
+}
+
+.info-section{
+  background-color:  #dddddd;
+  color: black;
+  padding: 10px;
+}
+.notes{
+  background-color:  #dddddd;
+  color: black;
+  padding: 10px;
+}
+
+/*Footer */
+.footer {
+  background: #111;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #66a3ff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  table,
+  td {
+    font-size: 14px;
+  }
+}

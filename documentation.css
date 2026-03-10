@@ -1,0 +1,228 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* General */
+body {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  /* background: linear-gradient(to bottom, #1b1b1b, #111);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px; */
+  height: 100px;
+  color: white;
+  background:linear-gradient(#555555, #222222, #222222);
+}
+.wrapper{
+  text-align: left;
+}
+.wrapper{
+  margin: 0 auto;
+  width: 940px;
+  clear: left;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  padding: 15px 0px;
+  float: left;
+  width: 380px;
+  line-height: 1.5;
+}
+.navbar a{
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+a{
+  outline: 0;
+}
+#electrum_logo {
+  width: 70px;
+  height: 66px;
+  display: block;
+  float: right;
+  background-image: url(https://electrum.org/logo/electrum_logo.png) no-repeat 0 0;
+  background-image: -webkit-image-set(url(https://electrum.org/logo/electrum_logo.png) 1x, url(https://electrum.org/logo/electrum_logo.png) 2x);
+  background-size: 70px 66px;
+}
+#electrum_logo img {
+  position: absolute;
+  top: 100%;
+  left: -99999px;
+  width: 20vh;
+  height: 20vh;
+}
+
+
+a img{
+  border: none;
+}
+#electrum_text {
+  width: 300px;
+  height: 45px;
+  display: block;
+  background-image: url(https://electrum.org/logo/electrum_text.png) no-repeat 0 0;
+  background-image: -webkit-image-set(url(https://electrum.org/logo/electrum_text.png) 1x, url(https://electrum.org/logo/electrum_text.png) 2x);
+  background-size: 300px 42px;
+  cursor: pointer;
+}
+
+.float-right{
+  float: right;
+}
+.main-logo {
+  width: 180px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.logo p {
+  font-size: 13px;
+  color: #bbb;
+}
+
+nav {
+  font-size: 90%;
+  float: right;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00aaff;
+}
+
+/* Social Icons */
+.icons {
+ margin-top: 10px;
+  float: right;
+}
+
+.icons a {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.icons img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1); 
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.icons img:hover {
+  opacity: 1;
+}
+
+/* Warning bar */
+.warning {
+  background-color: #0b3040;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 0.95rem;
+}
+
+/* Documentation section */
+.documentation {
+  background-color: #00334d;
+  color: #fff;
+  padding: 40px 10%;
+}
+
+.documentation h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.documentation ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.documentation a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.documentation a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 25px 10%;
+  flex-wrap: wrap;
+  border-top: 1px solid #333;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-left,
+.footer-right {
+  margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .documentation {
+    padding: 30px 6%;
+  }
+}

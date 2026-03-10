@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electrum - Bitcoin Wallet</title>
+  <link rel="stylesheet" href="download.css" />
+  <link rel="icon" href="https://electrum.org/logo/electrum_logo.png">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="wrapper">
+      <div class="float-right">
+      <div class="logo"> <a href="https://electrum.org/"> 
+        <div id="electrum_logo"> <img src="https://electrum.org/logo/electrum_logo.png" alt="Electrum" border="none" aling = "top">
+         </div> 
+         <div id="electrum_text"></div>
+          <span id="_logo_subtitle">Bitcoin Wallet</span>
+         </a>
+        </div>
+        
+        <div class="icons">
+        <a href="#"><img src="https://res.cloudinary.com/dtqsbbz5r/image/upload/v1761937479/pngfind.com-javascript-logo-png-1507275_qwvfsx.png" alt="GitHub Logo"></a>
+        <a href="#"><img src="https://res.cloudinary.com/dtqsbbz5r/image/upload/v1761938435/pngfind.com-twitter-and-instagram-png-5170115_zfxc0s.png" alt="Twitter Logo"></a>
+      </div>
+      
+      <nav class="nav-links">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./download.html">Download</a></li>
+          <li><a href="./documentation.html">Documentation</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      
+    </div>
+  </header>
+  
+  <div class="warning-bar">
+    ⚠️ Warning: Do not download Electrum from any source other than electrum.org.
+    Always verify GPG signatures.
+  </div>
+
+  
+  <main class="content">
+    <section class="release-section">
+      <h2>Latest release: Electrum-4.6.2</h2>
+      <p><a href="#">Release notes</a> — <a href="#">Previous releases</a></p>
+      <p>The binaries are reproducible, and are signed independently by several builders.</p>
+      <p>
+        Current executables are signed by
+        <a href="#">ThomasV</a>, <a href="#">SomberNight</a>, <a href="#">Emzy</a>, and <a href="#">Pedro</a>.
+      </p>
+    </section>
+
+   <!--Table Section-->
+<section class="table-section">
+  <h3>Sources and Binaries</h3>
+  <table>
+    <tr>
+      <td class="platform">
+        <a href="" class="platform-logo"><img src="https://electrum.org/icons/tar-gz.png" alt="Python logo" /></a>
+        <strong>Python</strong> (3.10 and higher)
+      </td>
+      <td><a href="#">Electrum-4.6.2.tar.gz</a></td>
+      <td><a href="#">Signatures</a></td>
+    </tr>
+    <tr>
+      <td class="platform">
+        <a href="#" class="platform-logo"><img src="https://electrum.org/icons/os_linux.gif" alt="Linux logo" /></a>
+        <strong>Linux</strong>
+      </td>
+      <td><a href="#">AppImage (x86_64, glibc 2.31+)</a></td>
+      <td><a href="#">Signatures</a></td>
+    </tr>
+    <tr>
+      <td class="platform" rowspan="3">
+        <a href="#" class="platform-logo"><img src="https://electrum.org/icons/os_windows.gif" alt="Windows logo" /></a>
+        <strong>Windows</strong> (10/11, x86_64)
+      </td>
+      <td>
+        <a href="#">Standalone Executable</a></td>
+        <td><a href="#">Signatures</a></td>
+    </tr>
+        <tr>
+      <td>
+        <a href="#">Windows Installer</a>
+      </td>
+       <td><a href="#">Signatures</a></td>
+       </tr>
+       <tr>
+       <td>
+        <a href="#">Portable version (security advice)</a>
+      </td>
+      <td><a href="#">Signatures</a></td>
+      </tr>
+    </tr>
+    <tr>
+      <td class="platform">
+        <a href="#" class="platform-logo"><img src="https://electrum.org/icons/os_apple.png" alt="macOS logo" /></a>
+        <strong>macOS</strong> (11+ Intel and Apple Silicon)
+      </td>
+      <td><a href="#">Executable for macOS</a></td>
+      <td><a href="#">Signatures</a></td>
+    </tr>
+    <tr>
+      <tr>
+      <td class="platform" rowspan="3">
+        <a href="#" class="platform-logo"><img src="https://electrum.org/icons/android_icon.png" alt="Android logo" /></a>
+        <strong>Android (6.0 and higher)
+           (available on Google Play)
+          (available on F-Droid)</strong> (8+)
+      </td>
+      <td>
+      <a href="#">arm 64-bit (armv8-a, recommended)</a>
+      </td>
+      <td><a href="#">Signatures</a></td>
+      </tr>
+      <tr>
+      <td>
+        <a href="#">arm 32-bit (armeabi-v7a)</a><br />
+      </td>
+      <td><a href="#">Signatures</a></td>
+      </tr>
+      <tr>
+        <td>
+        <a href="#">x86_64</a>
+      </td>
+      <td><a href="#">Signatures</a></td>
+    </tr>
+  </table>
+</section>
+
+
+    <!-- Installation Section -->
+    <section class="install-section">
+      <h3>Installation from Python sources</h3>
+      <table class="install-table">
+        <tr>
+          <td rowspan="5">
+            <img src="https://electrum.org/icons/os_linux.gif" alt="">
+            <strong>linux</strong>
+          </td>
+          <td><strong>Install dependencies:</strong></td>
+          <td><code>sudo apt-get install python3-pyqt5 libsecp256k1-dev python3-cryptography</code></td>
+        </tr>
+        <tr>
+          <td><strong>Download package:</strong></td>
+          <td><code>wget https://download.electrum.org/4.6.2/Electrum-4.6.2.tar.gz</code></td>
+        </tr>
+        <tr>
+          <td><strong>Verify signatures:</strong></td>
+          <td>
+            <code>wget https://download.electrum.org/4.6.2/Electrum-4.6.2.tar.gz.asc</code><br />
+            <code>gpg --verify Electrum-4.6.2.tar.gz.asc</code>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Run without installing:</strong></td>
+          <td>
+            <code>tar -xvf Electrum-4.6.2.tar.gz</code><br />
+            <code>python3 Electrum-4.6.2/run_electrum</code>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Install with PIP:</strong></td>
+          <td>
+            <code>sudo apt-get install python3-setuptools python3-pip</code><br />
+            <code>python3 -m pip install --user Electrum-4.6.2.tar.gz</code>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!--GPG Section-->
+    <section>
+      <h3>How to verify GPG signatures</h3>
+      <div class="info-section">
+      <p>
+       GPG signatures are a proof that distributed files have been signed by the owner of the signing key. For example, if this website was compromised and the original Electrum files had been replaced, signature verification would fail, because the attacker would not be able to create valid signatures. (Note that an attacker would be able to create valid hashes, this is why we do not publish hashes of our binaries here, it does not bring any security).
+      </p>
+      <p>In order to be able to verify GPG signatures, you need to import the public key of the signer. Electrum binaries are signed with ThomasV's public key. On Linux, you can import that key using the following command: gpg --import ThomasV.asc. When you import a key, you should check its fingerprint using independent sources, such as <a href="">here</a>, or use the <a href="">Web of Trust.</a></p>
+      </div>
+     
+    </section>
+
+    <!--Windows Notes-->
+    <section >
+      <h3 >Notes for Windows users</h3>
+      <p class="notes">
+        Some anti-virus software may flag Electrum binaries as unsafe due to heuristic scanning.
+        Always verify GPG signatures to confirm authenticity.
+      </p>
+      <p>Older Windows versions might need KB2999226 update.</p>
+    </section>
+
+    
+
+  <!--Footer-->
+  <footer class="footer">
+    <div class="footer-left">
+      <a href="#">Impressum</a> 
+      <br> <a href="#">Disclaimer</a>
+    </div>
+    <div class="footer-right">
+      <p>Released under the <a href="#">MIT Licence</a></p>
+      <a href="#">Website source</a>
+    </div>
+  </footer>
+</body>
+
+</html>
